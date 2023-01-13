@@ -1,0 +1,291 @@
+.hero {
+  padding-top: 7em;
+  text-align: center;
+  background: url("/images/buildings-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content {
+  /*
+    difference between top and bottom padding is the amount of margin needed for the .main-points box
+    ex: 7 - 9 = -2
+    .main-points {
+      margin-top: -2em;
+      ...
+    }
+  */
+  padding: 7em 0 10em 0;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.25em;
+  color: var(--bright);
+}
+.hero-content h1 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.hero-content--buttons {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1em;
+  /* margin: 0 auto; */
+}
+@media (min-width: 600px) {
+  .hero-content--buttons {
+    flex-direction: row;
+    grid-gap: 1.5em;
+    margin: 0;
+  }
+}
+
+.main-points {
+  margin-top: -3em;
+  z-index: 10;
+  position: relative;
+}
+.main-points-heading-box {
+  background: #ebeef0;
+  padding: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5em;
+}
+.main-points-chevron img {
+  width: 1.5em;
+}
+@media (min-width: 800px) {
+  .hero-content {
+    padding: 9em 0 16em 0;
+  }
+  .hero-content h1 {
+    max-width: none;
+  }
+  .main-points {
+    margin-top: -7em;
+  }
+  .main-points-heading-box {
+    padding: 4em;
+    grid-gap: 2.5em;
+  }
+  .main-points-chevron img {
+    width: 2em;
+  }
+}
+@media (min-width: 1140px) {
+  .main-points-heading-box {
+    padding: 6em;
+    grid-gap: 3em;
+  }
+}
+
+.security {
+  padding: 3em 1em 4em 1em;
+  background: url("/images/mountain-1.png");
+  background-repeat: none;
+  background-size: cover;
+  color: var(--bright);
+}
+.security-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3em;
+}
+.security-info {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+  margin-bottom: 3em;
+}
+.security-info a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.security-info a:hover {
+  color: var(--accent-light);
+}
+.security-boxes {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+}
+.security-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-gap: 0.5em;
+}
+.security-box__heading {
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  font-size: 1em;
+}
+@media (min-width: 600px) {
+  .security {
+    padding: 4em 2em 5em 2em;
+  }
+}
+@media (min-width: 800px) {
+  .security {
+    padding: 4em 4em 5em 4em;
+  }
+  .security-container {
+    grid-gap: 3.5em;
+  }
+  .security-boxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .security-box {
+    width: 33.33%;
+  }
+  .security-info {
+    grid-gap: 3em;
+    margin-bottom: 4em;
+  }
+}
+
+.solutions {
+  background: url("/images/steelglass.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--bright);
+  padding: 6em 0 4em 0;
+  margin-top: -4em;
+  position: relative;
+}
+.solutions a {
+  color: var(--bright);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.125em;
+}
+.solutions a:hover {
+  color: var(--accent-light);
+}
+.solutions-container {
+  display: flex;
+  flex-direction: column;
+}
+.solution {
+  border-bottom: 1px solid var(--accent-light);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.25em;
+}
+.solution ul {
+  list-style: disc;
+  margin-left: 1em;
+  line-height: 1.75;
+}
+.solution:last-child {
+  border-bottom: none;
+}
+@media (min-width: 800px) {
+  .solutions {
+    padding: 11em 0 7em 0;
+    margin-top: -6em;
+  }
+  .solutions-container {
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 1.5em;
+  }
+  .solution {
+    width: 50%;
+    border-bottom: none;
+    border-right: 1px solid var(--accent-light);
+    padding: 0 2em;
+  }
+  .solution:last-child {
+    border-right: none;
+  }
+}
+@media (min-width: 800px) {
+  .solutions {
+    padding: 13em 0 9em 0;
+    margin-top: -7em;
+  }
+}
+
+.tech-solutions {
+  padding: 4em 0;
+  background: url("/images/white-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tech-solutions-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+  align-items: center;
+}
+.tech-solutions-container p {
+  margin-bottom: 1.25em;
+}
+.tech-solutions-container p:last-child {
+  margin-bottom: 0;
+}
+.tech-solutions__heading {
+  color: var(--accent);
+}
+
+@media (min-width: 800px) {
+  .tech-solutions {
+    padding: 8em 0 12em 0;
+  }
+}
+@media (min-width: 1140px) {
+  .tech-solutions {
+    padding: 10em 0 14em 0;
+  }
+}
+
+.global-reach {
+  padding: 4em 0;
+  background: url("/images/services-bg.png");
+  /* background: url('https://aventel.netlify.app/images/global.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.global-reach h2 {
+  text-align: center;
+}
+.global-reach img {
+  margin: 0 auto;
+  display: block;
+}
+.global-reach-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+}
+.global-reach-text {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1em;
+}
+@media (min-width: 800px) {
+  .global-reach {
+    padding: 8em 0;
+  }
+  .global-reach h2 {
+    text-align: left;
+  }
+  .global-reach img {
+    margin: none;
+  }
+  .global-reach-container {
+    flex-direction: row;
+  }
+  .global-reach-container {
+    grid-gap: 4em;
+  }
+  .global-reach-container div {
+    width: 50%;
+  }
+}

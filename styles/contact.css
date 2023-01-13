@@ -1,0 +1,22 @@
+.contact {
+  background: url("/images/white-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0 7em 0;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3em;
+}
+.contact-container .h1 {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.5em;
+}
+  
